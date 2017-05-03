@@ -1,0 +1,77 @@
+//----Nav Styles-------//
+#nav {
+  ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  li{
+    float: left;
+    display: block;
+    color: #242B3B;
+    a {
+      color: #242B3B;
+      padding: 1.4rem 1rem 1rem 1rem;
+      display: block;
+      font-family: "proxima-nova";
+      font-weight: 700;
+      text-decoration: none;
+      position: relative;
+      font-size: 1.1em;
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 1rem, 1.2rem;
+      text-decoration: none;
+    }
+  }
+
+  a:hover {
+    background-color: #AC6E51;
+    transition: background-color 0.5s ease;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+ }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #238BA1;
+   transition: background-color 0.5s ease;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   a {
+     color: white;
+     padding: 1rem 1.2rem;
+     text-decoration: none;
+     margin-left: 0;
+     display: block;
+     text-align: left;
+   }
+   a:hover {
+     background-color: #AC6E51;
+     transition: background-color 0.5s ease;
+   }
+ }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .logo {
+    font-family: "viktor-script";
+    color: #242B3B;
+    font-size: 1.35rem;
+    font-weight: 100;
+    float: left;
+    margin: 0;
+    padding: 1.2rem 1rem .5rem 1rem;
+  }
+}

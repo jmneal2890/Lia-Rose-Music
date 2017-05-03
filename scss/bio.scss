@@ -1,0 +1,28 @@
+//------Bio styles------//
+
+#bio {
+  margin: 1rem auto 4rem auto;
+  padding: 3rem 0;
+  background-color: #F4F6F7;
+  box-shadow: 5px 8px 16px 5px rgba(0,0,0,0.2);
+  //background: rgba(75, 104, 120, .7);
+  //color: white;
+  .bio_block {
+    display: flex;
+    margin: 0 auto;
+    color: #242B3B;
+    .biopic {
+      display: block;
+      max-width: 275px;
+      max-height: 250px;
+      margin-left: 0 auto;
+      padding: 0 1rem 0 1rem;
+    }
+    h1 {
+      text-align: left;
+    }
+    p {
+      padding: 0 1rem;
+    }
+  }
+}

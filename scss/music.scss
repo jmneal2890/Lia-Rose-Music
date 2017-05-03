@@ -1,0 +1,49 @@
+//------Music Styles-----//
+
+#music {
+  .img_main{
+    margin: 0 auto 0 1rem;
+    display: block;
+    .playlist {
+      margin-left: 1rem;
+      display: block;
+      margin-right: auto;
+      margin-top: 5rem;
+      position: absolute;
+      z-index: 60;
+    }
+    .playlist_bg {
+      position: relative;
+      z-index: 10;
+      display: block;
+      .container {
+        max-width: 485px;
+        max-height: 685px;
+        box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+      }
+    }
+  }
+}
+.related_links {
+  float: right;
+  margin-right: 15rem;
+  line-height: 5rem;
+  margin-top: -2.5rem;
+  ul {
+    list-style-type: none;
+  }
+}
+
+
+.js .imagemap__item {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+
+  .imagemap__item:target {
+    display: block;
+  }
+  .imagemap__item:target > .imagemap__text {
+    display: block;
+  }
+}
