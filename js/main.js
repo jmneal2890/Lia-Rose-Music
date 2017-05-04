@@ -93,7 +93,36 @@ var project = 'lia';
 
 
 //slick control
-$('.slider').slick({
+$('.slick').on("beforeChange", function(event, slick){
+  var currentSlide, slideType, player, command;
+
+  currentSlide = $(slick.$slider).find(".slick-current");
+
+  slideType = currentSlide.attr("class").split(" ")[1];
+
+  player = currentSlide.find("iframe").get(0);
+
+  if (slideType == "vimeo") {
+    command = {
+      "method": "pause",
+      "value": "true"
+    };
+  } else {
+    command = {
+      "event": "command",
+      "func": "pauseVideo"
+    };
+  }
+
+  if (player != undefined) {
+    player.contentWindow.postMessage(JSON.stringify(command), "*");
+  }
+
+});
+
+$('.slick').slick({
+  arrows: false,
+  dots: true
 });
 
 
